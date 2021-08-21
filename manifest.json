@@ -1,0 +1,13 @@
+{
+  "name":"Google Meet Admitter",
+  "version": "1",
+  "description": "Automatically admit participants into any google meet",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches":["https://meet.google.com/*"],
+      "js": ["scripts/main.js"]
+    }
+  ]
+}
