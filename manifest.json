@@ -4,10 +4,16 @@
   "description": "Automatically admit participants into any google meet",
   "manifest_version": 3,
   "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches":["https://meet.google.com/*"],
       "js": ["scripts/main.js"]
     }
-  ]
+  ],
+  "action" : {
+    "default_popup": "views/popup.html"
+  }
 }
