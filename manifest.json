@@ -1,6 +1,6 @@
 {
   "name":"Google Meet Admitter",
-  "version": "1",
+  "version": "1.0",
   "description": "Automatically admit participants into any google meet",
   "manifest_version": 3,
   "permissions": ["storage"],
@@ -15,5 +15,10 @@
   ],
   "action" : {
     "default_popup": "views/popup.html"
+  },
+  "icons": {
+    "16": "icons/favicon.png",
+    "32": "icons/favicon.png",
+    "64": "icons/favicon.png"
   }
 }
